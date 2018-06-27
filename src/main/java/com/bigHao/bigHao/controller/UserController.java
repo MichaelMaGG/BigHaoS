@@ -1,5 +1,6 @@
 package com.bigHao.bigHao.controller;
 
+import com.bigHao.bigHao.entity.UserInfo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,4 +20,12 @@ public class UserController {
         return "I am an user!";
     }
 
+    @RequestMapping("/user")
+    public UserInfo getUserInfo() {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setId("1");
+        userInfo.setName("Hao");
+
+        return userInfo;
+    }
 }
