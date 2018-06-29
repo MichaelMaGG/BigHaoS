@@ -13,7 +13,7 @@ public class UserController {
     @RequestMapping("/hello")
     public String getHello(String name) {
         StringBuilder sb = new StringBuilder("welcome to BigHaoS! ");
-        sb.append(name).append(" !");
+        sb.append(name).append("!");
         return sb.toString();
     }
 
